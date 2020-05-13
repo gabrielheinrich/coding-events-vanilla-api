@@ -1,0 +1,13 @@
+version: "3.0"
+services:
+  postgres:
+    container_name: "postgres"
+    image: postgres
+    volumes:
+      - ./volume:/var/lib/postgresql/data
+    environment:
+      - "POSTGRES_DB=coding-events"
+      - "POSTGRES_PASSWORD=123456"
+      - "POSTGRES_USER=root"
+    ports:
+      - 5432:5432
