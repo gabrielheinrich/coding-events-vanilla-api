@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Events API</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="pt-8 px-2" style="font-family: sans-serif;">
+    <h1 class="text-center text-2xl font-bold mb-8">Coding Events API</h1>
+    <table class="max-w-screen-md w-full mx-auto">
+      <tr class="border-b">
+        <th class="text-left">Info</th>
+        <th class="text-left">Method</th>
+        <th class="text-left">Path</th>
+        <th class="text-left">Body</th>
+        <th class="text-left">Response Body</th>
+      </tr>
+      <tr>
+        <td class="pr-2">Get all events</td>
+        <td class="pr-2">GET</td>
+        <td class="pr-2">/events</td>
+        <td class="pr-2">-</td>
+        <td class="pr-2">Array of events</td>
+      </tr>
+      <tr>
+        <td class="pr-2">Get one event</td>
+        <td class="pr-2">GET</td>
+        <td class="pr-2">/events/:id</td>
+        <td class="pr-2">-</td>
+        <td class="pr-2">
+          Event object or <span class="font-mono text-sm">{}</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="pr-2">Create a new event</td>
+        <td class="pr-2">POST</td>
+        <td class="pr-2">/events</td>
+        <td class="pr-2 font-mono text-sm">{"title": "Event Title"}</td>
+        <td class="pr-2">Created Event</td>
+      </tr>
+    </table>
+  </body>
+</html>
