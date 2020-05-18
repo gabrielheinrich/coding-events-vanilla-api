@@ -9,6 +9,7 @@
     "start:db": "docker-compose -f docker-postgres/docker-compose.yml up -d --build",
     "stop:db": "docker-compose -f docker-postgres/docker-compose.yml down",
     "seed:db": "yarn knex migrate:latest",
+    "clean:db": "node scripts/clean-db.js",
     "drop:db": "yarn stop:db && rm -rf docker-postgres/volume"
   },
   "dependencies": {
